@@ -1,0 +1,24 @@
+https://codequotient.com/attempt/attemptquestion/61458940c43ce68971e598b6/5a2e30b56dc3de029e488ad4
+
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+  int n,j;
+  cin>>n;
+  for(int i=1;i<=n;i++){
+    for(j=i;j>=1;j--)
+    {
+      cout<<j;
+    }
+    //After execution of above for loop  j became 0
+    while(j+2<=i){
+      cout<<j+2;
+      j++;
+    }
+    cout<<"\n";
+  }
+   return 0;
+}
