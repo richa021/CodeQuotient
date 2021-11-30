@@ -1,0 +1,26 @@
+https://codequotient.com/attempt/attemptquestion/61458940c43ce68971e598b6/5a09490317bcb854c302bd28
+
+
+int sumOfDigits(int n){
+  if(n==0){
+    return 0;
+  }
+  else{
+    return (n%10 +sumOfDigits(n/10)); 
+  }
+}
+int main()
+{
+
+  
+   /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+  int t;
+  cin>>t;
+  while(t--){
+    int n;
+    cin>>n;
+    int sum = sumOfDigits(n);
+    cout<<sum<<"\n";
+  }
+  return 0;
+}
